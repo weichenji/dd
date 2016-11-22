@@ -80,3 +80,23 @@ public class MainActivity extends Activity { <br>
       　  public long` getItemId(int id)` { <br>
            　 return id; 
     　  　  } <br>
+<hr>
+: getView(int position, View convertView, ViewGroup parent)方法，当列表中每一项显示到页面时， 都会调用Adapter的getView方法返回一个View<br>
+  　 //创建View方法 <br>
+     　   public View getView(int position, View convertView, ViewGroup parent) { <br>
+        　     `ImageView` imageView; <br>
+           　     if (convertView == null) { <br>
+             　       imageView = new ImageView(context); //给ImageView设置资源<br>
+              　      imageView.setLayoutParams(new GridView.LayoutParams(75, 75));//设置布局图片7575显示 <br>
+               　     imageView.setAdjustViewBounds(false);//设置边界对齐 <br>
+               　     imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);//设置刻度的类型 <br>
+                　    imageView.setPadding(8, 8, 8, 8);//设置间距 <br>
+            　    }  <br>
+              　  else { <br>
+             　       imageView = (ImageView) convertView; <br>
+            　    } <br>
+             　   imageView.setImageResource(imgs[position]);//为ImageView设置图片资源 <br>
+              　  return imageView; <br>
+      　  } <br>
+} <br>
+     
