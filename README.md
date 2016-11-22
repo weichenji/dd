@@ -12,19 +12,19 @@
  main.xml<br>
 <?xml version="1.0" encoding="utf-8"?><br>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"<br>
-    android:orientation="vertical"<br>
-    android:layout_width="fill_parent"<br>
-    android:layout_height="fill_parent"<br>
-    ><br>
-    <GridView      <br>
-        android:id="@+id/GridView1"  <br>
-        android:layout_width="wrap_content"  <br>
-        android:layout_height="wrap_content"<br>
-        android:columnWidth="90dp"<br>
-        android:numColumns="3" <br>
-        android:verticalSpacing="10dp"<br>
-        android:horizontalSpacing="10dp"<br>
-        android:stretchMode="columnWidth"<br>
-        android:gravity="center"     <br>    
-        /><br>
+ 　 　  android:orientation="vertical"<br>
+ 　 　  android:layout_width="fill_parent"<br>
+  　　  android:layout_height="fill_parent"<br>
+ 　   　><br>
+  　  <GridView      　<br>
+       　 　android:id="@+id/GridView1"  　<br>
+       　　 android:layout_width="wrap_content"  　<br>
+       　 　android:layout_height="wrap_content"<br>
+       　 　android:columnWidth="90dp"<br>
+       　 　android:numColumns="3" <br>
+       　 　android:verticalSpacing="10dp"<br>
+       　 　android:horizontalSpacing="10dp"<br>
+       　 　android:stretchMode="columnWidth"<br>
+       　　 android:gravity="center"     <br>    　
+       　 　/><br>
 </LinearLayout>
