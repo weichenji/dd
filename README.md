@@ -5,3 +5,4 @@
              1、准备数据源<br>
              2、新建适配器<br>
              3、加载适配器<br>
+![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")  
