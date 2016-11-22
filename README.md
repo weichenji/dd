@@ -86,8 +86,8 @@ public class MainActivity extends Activity { <br>
      　   public View getView(int position, View convertView, ViewGroup parent) { <br>
         　     `ImageView` imageView; <br>
            　     if (convertView == null) { <br>
-             　       imageView = new ImageView(context); //给ImageView设置资源<br>
-              　      imageView.setLayoutParams(new GridView.LayoutParams(75, 75));//设置布局图片75 ×75显示 <br>
+             　       imageView = `new ImageView(context)`; //给ImageView设置资源<br>
+              　      imageView.setLayoutParams(`new GridView.LayoutParams(75, 75)`);//设置布局图片75×75显示 <br>
                　     imageView.setAdjustViewBounds(false);//设置边界对齐 <br>
                　     imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);//设置刻度的类型 <br>
                 　    imageView.setPadding(8, 8, 8, 8);//设置间距 <br>
