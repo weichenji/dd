@@ -1,2 +1,3 @@
-###### 网格视图 <Grid View>
+###### 网格视图
 as
+  ( Grad View)
