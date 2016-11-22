@@ -9,6 +9,7 @@
 　　　　　　　3、加载适配器<br>
 <hr>
 实例解析：<br> 
+创建布局,创建一个三列的布局用来显示图片<br>
 main.xml<br>
 <?xml version="1.0" encoding="utf-8"?><br>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"<br>
@@ -39,7 +40,7 @@ public class MainActivity extends Activity { <br>
   　      setContentView(R.layout.main);  <br>
   　      GridView gv = (GridView)findViewById(R.id.GridView1); //加载布局 <br>
    　     //为GridView设置适配器  <br>
-  　     ` gv.setAdapter(new MyAdapter(this));` //设置适配器 <br>
+  　       gv.setAdapter(`new MyAdapter`(this)`);` //设置适配器this代表当前content因为Mydapter(content) <br>
  　       //注册监听事件  <br>
  　       gv.setOnItemClickListener(new OnItemClickListener()  <br>
  　       {  <br>
@@ -51,8 +52,7 @@ public class MainActivity extends Activity { <br>
 　    }  <br>
 }  <br> 
 <hr>
- //自定义适配器：由于数组中的数据是无法直接给GridView使用的因此我们必须 借助适配器来完成它可以通过泛型来指定要适配的数据类型然后， <br>
- //在构造器中把要适配的数据传入即可<br>
+ //自定义适配器：`主要用来提供图片数据`<br>
   　  class MyAdapter extends `BaseAdapter`{//创建适配器继承自子类`BaseAdapter` <br>
      　   //上下文对象 <br>
      　   private` Context` context;//含有一个私有对象context <br>
