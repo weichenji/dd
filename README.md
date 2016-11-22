@@ -20,7 +20,9 @@
     　　android:id="@+id/GridView1"  　<br>
        android:layout_width="wrap_content"  　<br>
        android:layout_height="wrap_content"<br>
-       android:columnWidth="90dp"<br>
+       android:columnWidth="90dp"／／每列的宽度，也就是Item的宽度，<br>
+<?xml version="1.0" encoding="utf-8"?>
+＜
        android:numColumns="3" <br>
       　android:verticalSpacing="10dp"<br>
        android:horizontalSpacing="10dp"<br>
