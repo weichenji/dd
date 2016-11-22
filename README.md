@@ -51,7 +51,8 @@ public class MainActivity extends Activity { <br>
 　    }  <br>
 }  <br> 
 <hr>
- //自定义适配器 <br>
+ //自定义适配器：由于数组中的数据是无法直接给GridView使用的因此我们必须 借助适配器来完成它可以通过泛型来指定要适配的数据类型然后， <br>
+ //在构造器中把要适配的数据传入即可<br>
   　  class MyAdapter extends `BaseAdapter`{//创建适配器继承自子类`BaseAdapter` <br>
      　   //上下文对象 <br>
      　   private` Context` context;//含有一个私有对象context <br>
