@@ -37,16 +37,46 @@ public class MainActivity extends Activity { <br>
  　   public void onCreate(Bundle savedInstanceState) {  <br>
  　       super.onCreate(savedInstanceState);  <br>
   　      setContentView(R.layout.main);  <br>
-  　      GridView gv = (GridView)findViewById(R.id.GridView1);  <br>
+  　      GridView gv = (GridView)findViewById(R.id.GridView1); //加载布局 <br>
    　     //为GridView设置适配器  <br>
-  　      gv.setAdapter(new MyAdapter(this));  <br>
+  　     ` gv.setAdapter(new MyAdapter(this));` //设置适配器 <br>
  　       //注册监听事件  <br>
  　       gv.setOnItemClickListener(new OnItemClickListener()  <br>
  　       {  <br>
  　           public void onItemClick(AdapterView<?> parent, View v, int position, long id)  <br>
   　          {  <br>
-　                Toast.makeText(MainActivity.this, "pic" + position, Toast.LENGTH_SHORT).show();  <br>
+　               ` Toast`.makeText(MainActivity.this, "pic" + position, Toast.LENGTH_SHORT).show(); //使用Toast显示 <br>
  　           }  <br>
 　        });  <br>
 　    }  <br>
 }  <br> 
+<hr>
+ //自定义适配器 <br>
+  　  class MyAdapter extends `BaseAdapter`{//创建适配器继承自子类`BaseAdapter` <br>
+     　   //上下文对象 <br>
+     　   private` Context` context;//含有一个私有对象context <br>
+     　   //图片数组 <br>
+     　   private` Integer[] imgs` = {  //imgs数组用来加载图片 ！注意：格式<br>
+            　    R.drawable.pic0, R.drawable.pic1, R.drawable.pic2,  <br>
+              　  R.drawable.pic3, R.drawable.pic4, R.drawable.pic5,   <br>             
+             　   R.drawable.pic6, R.drawable.pic7, R.drawable.pic8,  <br>
+              　  R.drawable.pic0, R.drawable.pic1, R.drawable.pic2,  <br>
+              　  R.drawable.pic3, R.drawable.pic4, R.drawable.pic5,   <br>             
+              　  R.drawable.pic6, R.drawable.pic7, R.drawable.pic8, <br>
+   　     };<br>
+         //MyAdapter的构造器含有一个context参数；<br>
+      　  MyAdapter(Context context){ <br>
+          　  this.context = context; <br>
+     　   } <br>
+         //三个方法‘getCount’‘getItem’‘getItemId’
+      　  public int `getCount()` { <br>
+          　  return imgs.length; 
+    　    } <br>
+ 
+      　  public Object `getItem(int item) `{ <br>
+           　 return item; 
+      　  } <br>
+ 
+      　  public long` getItemId(int id)` { <br>
+           　 return id; 
+    　  　  } <br>
