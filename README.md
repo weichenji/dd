@@ -16,15 +16,15 @@ main.xml<br>
  　   android:layout_width="fill_parent"<br><br>
 　    android:layout_height="fill_parent"
 　    ><br>
- 　   <GridView  <br>
+ 　   <GridView //gridView布局 <br>
 　        android:id="@+id/GridView1"  <br>
  　       android:layout_width="wrap_content"  <br>
  　       android:layout_height="wrap_content"<br>
- 　       android:columnWidth="90dp"<br>
-  　      android:numColumns="3"<br>
- 　       android:verticalSpacing="10dp"<br>
- 　       android:horizontalSpacing="10dp"<br>
-　        android:stretchMode="columnWidth"<br>
+ 　       android:columnWidth="90dp"//每列的宽度，也就是Item的宽度<br>
+  　      android:numColumns="3"//列数设置设为3列<br>
+ 　       android:verticalSpacing="10dp"//垂直边距<br>
+ 　       android:horizontalSpacing="10dp"//水平边距<br>
+　        android:stretchMode="columnWidth"//缩放模式<br>
  　       android:gravity="center" <br>        
  　       /><br>
 </LinearLayout>
