@@ -27,4 +27,26 @@ main.xml<br>
 　        android:stretchMode="columnWidth"//缩放模式<br>
  　       android:gravity="center" <br>        
  　       /><br>
-</LinearLayout>
+</LinearLayout><br>
+<hr>
+MainActivity.Java<br>
+...<br>
+
+public class MainActivity extends Activity { <br>
+ 　   @Override <br>
+ 　   public void onCreate(Bundle savedInstanceState) {  <br>
+ 　       super.onCreate(savedInstanceState);  <br>
+  　      setContentView(R.layout.main);  <br>
+  　      GridView gv = (GridView)findViewById(R.id.GridView1);  <br>
+   　     //为GridView设置适配器  <br>
+  　      gv.setAdapter(new MyAdapter(this));  <br>
+ 　       //注册监听事件  <br>
+ 　       gv.setOnItemClickListener(new OnItemClickListener()  <br>
+ 　       {  <br>
+ 　           public void onItemClick(AdapterView<?> parent, View v, int position, long id)  <br>
+  　          {  <br>
+　                Toast.makeText(MainActivity.this, "pic" + position, Toast.LENGTH_SHORT).show();  <br>
+ 　           }  <br>
+　        });  <br>
+　    }  <br>
+}  <br> 
