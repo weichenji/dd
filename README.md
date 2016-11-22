@@ -9,7 +9,7 @@
 　　　　　　　3、加载适配器<br>
 <hr>
 实例解析：<br> 
-"main.xml"
+ main.xml<br>
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
